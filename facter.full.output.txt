@@ -1,0 +1,1696 @@
+--------
+aio_agent_version => 1.10.1
+augeas => {
+  version => "1.4.0"
+}
+disks => {
+  sda => {
+    model => "INTEL SSDSC2BB01",
+    size => "1.09 TiB",
+    size_bytes => 1200243695616,
+    vendor => "ATA"
+  }
+}
+dmi => {
+  bios => {
+    release_date => "03/31/2016",
+    vendor => "Intel Corporation",
+    version => "SE5C610.86B.01.01.0016.033120161139"
+  },
+  board => {
+    asset_tag => "Base Board Asset Tag",
+    manufacturer => "Intel Corporation",
+    product => "S2600TPFR"
+  },
+  chassis => {
+    asset_tag => "....................",
+    type => "Rack Mount Chassis"
+  },
+  manufacturer => "Intel Corporation",
+  product => {
+    name => "S2600TPFR"
+  }
+}
+facterversion => 3.6.4
+filesystems => xfs
+identity => {
+  gid => 1054,
+  group => "bioinfo",
+  privileged => false,
+  uid => 3365,
+  user => "forsythc"
+}
+is_virtual => false
+kernel => Linux
+kernelmajversion => 3.10
+kernelrelease => 3.10.0-229.1.2.el7.x86_64
+kernelversion => 3.10.0
+load_averages => {
+  15m => 32.29,
+  1m => 32.04,
+  5m => 32.03
+}
+memory => {
+  swap => {
+    available => "4.00 GiB",
+    available_bytes => 4294963200,
+    capacity => "0%",
+    total => "4.00 GiB",
+    total_bytes => 4294963200,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  system => {
+    available => "486.85 GiB",
+    available_bytes => 522748395520,
+    capacity => "3.33%",
+    total => "503.62 GiB",
+    total_bytes => 540760219648,
+    used => "16.77 GiB",
+    used_bytes => 18011824128
+  }
+}
+mountpoints => {
+  / => {
+    available => "2.98 GiB",
+    available_bytes => 3199873024,
+    capacity => "62.70%",
+    device => "/dev/mapper/vg0-lv_root",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "7.99 GiB",
+    size_bytes => 8579448832,
+    used => "5.01 GiB",
+    used_bytes => 5379575808
+  },
+  /bigdata => {
+    available => "685.54 TiB",
+    available_bytes => 753755536490496,
+    capacity => "44.86%",
+    device => "/dev/bigdata",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "1.21 PiB",
+    size_bytes => 1366895638872064,
+    used => "557.65 TiB",
+    used_bytes => 613140102381568
+  },
+  /boot => {
+    available => "62.02 MiB",
+    available_bytes => 65032192,
+    capacity => "67.99%",
+    device => "/dev/sda1",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "193.73 MiB",
+    size_bytes => 203141120,
+    used => "131.71 MiB",
+    used_bytes => 138108928
+  },
+  /dev/shm => {
+    available => "251.81 GiB",
+    available_bytes => 270377062400,
+    capacity => "0.00%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "2.91 MiB",
+    used_bytes => 3047424
+  },
+  /home => {
+    available => "3.96 GiB",
+    available_bytes => 4250714112,
+    capacity => "0.79%",
+    device => "/dev/mapper/vg0-lv_home",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /rhome => {
+    available => "167.56 TiB",
+    available_bytes => 184232315977728,
+    capacity => "3.97%",
+    device => "/dev/home",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "174.48 TiB",
+    size_bytes => 191844910628864,
+    used => "6.92 TiB",
+    used_bytes => 7612594651136
+  },
+  /run => {
+    available => "251.79 GiB",
+    available_bytes => 270362165248,
+    capacity => "0.01%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "17.11 MiB",
+    used_bytes => 17944576
+  },
+  /scratch => {
+    available => "999.34 GiB",
+    available_bytes => 1073032847360,
+    capacity => "0.00%",
+    device => "/dev/mapper/vg0-lv_scratch",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "999.37 GiB",
+    size_bytes => 1073066614784,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /sys/fs/cgroup => {
+    available => "251.81 GiB",
+    available_bytes => 270380109824,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "noexec",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /tmp => {
+    available => "97.55 GiB",
+    available_bytes => 104742240256,
+    capacity => "0.06%",
+    device => "/dev/mapper/vg0-lv_tmp",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "97.61 GiB",
+    size_bytes => 104806400000,
+    used => "61.19 MiB",
+    used_bytes => 64159744
+  },
+  /var => {
+    available => "3.60 GiB",
+    available_bytes => 3866603520,
+    capacity => "9.75%",
+    device => "/dev/mapper/vg0-lv_var",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "398.52 MiB",
+    used_bytes => 417878016
+  }
+}
+networking => {
+  dhcp => "192.168.18.3",
+  domain => "ib.int.bioinfo.ucr.edu",
+  fqdn => "i22.ib.int.bioinfo.ucr.edu",
+  hostname => "i22",
+  interfaces => {
+    enp6s0f0 => {
+      bindings => [
+        {
+          address => "192.168.18.222",
+          netmask => "255.255.255.0",
+          network => "192.168.18.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:1ff:fe19:c3c7",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      dhcp => "192.168.18.3",
+      ip => "192.168.18.222",
+      ip6 => "fe80::a6bf:1ff:fe19:c3c7",
+      mac => "a4:bf:01:19:c3:c7",
+      mtu => 1500,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.18.0",
+      network6 => "fe80::"
+    },
+    enp6s0f1 => {
+      mac => "a4:bf:01:19:c3:c8",
+      mtu => 1500
+    },
+    ib0 => {
+      bindings => [
+        {
+          address => "192.168.19.222",
+          netmask => "255.255.255.0",
+          network => "192.168.19.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:103:19:c3c7",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      ip => "192.168.19.222",
+      ip6 => "fe80::a6bf:103:19:c3c7",
+      mtu => 65520,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.19.0",
+      network6 => "fe80::"
+    },
+    lo => {
+      bindings => [
+        {
+          address => "127.0.0.1",
+          netmask => "255.0.0.0",
+          network => "127.0.0.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "::1",
+          netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          network => "::1"
+        }
+      ],
+      ip => "127.0.0.1",
+      ip6 => "::1",
+      mtu => 65536,
+      netmask => "255.0.0.0",
+      netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+      network => "127.0.0.0",
+      network6 => "::1"
+    }
+  },
+  ip => "192.168.18.222",
+  ip6 => "fe80::a6bf:1ff:fe19:c3c7",
+  mac => "a4:bf:01:19:c3:c7",
+  mtu => 1500,
+  netmask => "255.255.255.0",
+  netmask6 => "ffff:ffff:ffff:ffff::",
+  network => "192.168.18.0",
+  network6 => "fe80::",
+  primary => "enp6s0f0"
+}
+os => {
+  architecture => "x86_64",
+  family => "RedHat",
+  hardware => "x86_64",
+  name => "CentOS",
+  release => {
+    full => "7.1.1503",
+    major => "7",
+    minor => "1"
+  },
+  selinux => {
+    enabled => false
+  }
+}
+partitions => {
+  /dev/mapper/vg0-lv_home => {
+    mount => "/home",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/mapper/vg0-lv_root => {
+    mount => "/",
+    size => "8.00 GiB",
+    size_bytes => 8589934592
+  },
+  /dev/mapper/vg0-lv_scratch => {
+    mount => "/scratch",
+    size => "999.86 GiB",
+    size_bytes => 1073590829056
+  },
+  /dev/mapper/vg0-lv_tmp => {
+    mount => "/tmp",
+    size => "97.66 GiB",
+    size_bytes => 104857600000
+  },
+  /dev/mapper/vg0-lv_var => {
+    mount => "/var",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda1 => {
+    mount => "/boot",
+    size => "200.00 MiB",
+    size_bytes => 209715200
+  },
+  /dev/sda2 => {
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda3 => {
+    size => "1.09 TiB",
+    size_bytes => 1195737350144
+  }
+}
+path => /rhome/forsythc/bin:/rhome/forsythc/bin:/opt/linux/centos/7.x/x86_64/pkgs/vim/7.4.1952/bin:/opt/linux/centos/7.x/x86_64/pkgs/iigb_utilities/1/bin:/opt/linux/centos/7.x/x86_64/pkgs/perl/5.20.2/bin:/opt/linux/centos/7.x/x86_64/pkgs/python/2.7.5/bin:/opt/linux/centos/7.x/x86_64/pkgs/ggobi/2.1.11/bin:/opt/linux/centos/7.x/x86_64/pkgs/R/3.4.0/bin:/opt/linux/centos/7.x/x86_64/pkgs/openmpi/2.0.1-slurm-16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/sbin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/bin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/opt/puppetlabs/bin
+processors => {
+  count => 64,
+  isa => "x86_64",
+  models => [
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz"
+  ],
+  physicalcount => 2,
+  speed => "3.00 GHz"
+}
+ruby => {
+  platform => "x86_64-linux",
+  sitedir => "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0",
+  version => "2.1.9"
+}
+ssh => {
+  dsa => {
+    fingerprints => {
+      sha1 => "SSHFP 2 1 19ce0d36b1dca8bc6a3f206c9549c3ce4b3c2cab",
+      sha256 => "SSHFP 2 2 6ce791e94e695e7a026fc5e07b238506768833a7697bb1fd19ccd5faff54b39f"
+    },
+    key => "AAAAB3NzaC1kc3MAAACBALVgMJT2+MVVkTVoqD23vRklI0wVoQeYLxbMyqPzbhWV8bUWuBwS6oqnwvikzF14nNaMBcc1pxllm+iF/PLiKUJx3UxJA62Qz4xgflctZCi/hs6mSk61k1VOhtS0HB5HZgBUXO/aZMJK5wuFo7GgJk8YAw+nis9NVCXRDqllCmDFAAAAFQDOi4aC8rUISIHoXRVkwpw4rQecFwAAAIAcE4kHltX+YvjgqqBFuaI+py25RtIZt06fIPT6JkfpZLTnV/v0Ep8xRz+pkidZAh34Dd1xD4MqMqRz58Bs5yGDSI1x7Sc9deR0OjRjKP97N8+u/a4mq9vQ9vw0EMw3RK6fd26GmCQOzor+1X0/agRo4avuTzHw9UpHpXDrxQiaNgAAAIBpH1P2mmqJWG2zrsGW/axbP98lDm89kLqXLshBz+gF5W4g6F2zvNqBVDXLyKBCyJkmMx+W5PydmVS2lccFg1PWJK5LUoW90oJDmk9ZO4QOEwj1TT1B4gKp4nSDHDon7U5vlRxPWEklKbf4mwc1zrzUrJAQK7jfJq0nTEuhY35olw=="
+  },
+  ed25519 => {
+    fingerprints => {
+      sha1 => "SSHFP 4 1 dcd2f5bb98a3190b610d03c8900da7b9cfef8e73",
+      sha256 => "SSHFP 4 2 9db4bc3c9ea919b250ae494b965e58c4446c114882cdde92bf03b2973ba63090"
+    },
+    key => "AAAAC3NzaC1lZDI1NTE5AAAAIFZCRLql8QSaQ3okmDOf41OqxnkqdPmb77C4469Pz7hb"
+  },
+  rsa => {
+    fingerprints => {
+      sha1 => "SSHFP 1 1 ec08093f8636472910a41f23bbaf86297f5dbc62",
+      sha256 => "SSHFP 1 2 71989d26ee089cc86a4f429c5a7c415d0edea49806f43b860169469bb6abafd7"
+    },
+    key => "AAAAB3NzaC1yc2EAAAABIwAAAQEAvDzLM2tTnay/8ApAWtKEBEEx2vUxOKj/aJ8A5dOv3omFC/Pj+RIXa0Nr99gg5o8duELE2hl2NGXqohsHEB8P9CWBRuOYrs2/LOwi2PEtNtX+nGnTaVm93kFDWBVQ6m8NnJKF4LDxzzye/YAWEPGqSvUl6OKYKs7bde97EPwpGO2femkJpLbpoubiO0YlTTbUP+dVHIeP02fa7MamdCgLZAMN7oTuI5K70VvuPutiQV2Ga9anMDLse+By2oDdyh7/OdC5CHFBgXFTvgCicIYkZeAF1bT5+qEvVXBECQW1+oxkCRPzR2QASwG5xIbdI6G5fEfKJfKnju2H0iIscsbK/Q=="
+  }
+}
+system_uptime => {
+  days => 1,
+  hours => 36,
+  seconds => 131963,
+  uptime => "1 day"
+}
+timezone => PDT
+virtual => physical
+aio_agent_version => 1.10.1
+augeas => {
+  version => "1.4.0"
+}
+disks => {
+  sda => {
+    model => "INTEL SSDSC2BB01",
+    size => "1.09 TiB",
+    size_bytes => 1200243695616,
+    vendor => "ATA"
+  }
+}
+dmi => {
+  bios => {
+    release_date => "03/31/2016",
+    vendor => "Intel Corporation",
+    version => "SE5C610.86B.01.01.0016.033120161139"
+  },
+  board => {
+    asset_tag => "Base Board Asset Tag",
+    manufacturer => "Intel Corporation",
+    product => "S2600TPFR"
+  },
+  chassis => {
+    asset_tag => "....................",
+    type => "Rack Mount Chassis"
+  },
+  manufacturer => "Intel Corporation",
+  product => {
+    name => "S2600TPFR"
+  }
+}
+facterversion => 3.6.4
+filesystems => xfs
+identity => {
+  gid => 1054,
+  group => "bioinfo",
+  privileged => false,
+  uid => 3365,
+  user => "forsythc"
+}
+is_virtual => false
+kernel => Linux
+kernelmajversion => 3.10
+kernelrelease => 3.10.0-229.1.2.el7.x86_64
+kernelversion => 3.10.0
+load_averages => {
+  15m => 32.06,
+  1m => 32.12,
+  5m => 32.06
+}
+memory => {
+  swap => {
+    available => "4.00 GiB",
+    available_bytes => 4294963200,
+    capacity => "0%",
+    total => "4.00 GiB",
+    total_bytes => 4294963200,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  system => {
+    available => "459.67 GiB",
+    available_bytes => 493564268544,
+    capacity => "8.73%",
+    total => "503.62 GiB",
+    total_bytes => 540760219648,
+    used => "43.95 GiB",
+    used_bytes => 47195951104
+  }
+}
+mountpoints => {
+  / => {
+    available => "2.98 GiB",
+    available_bytes => 3199848448,
+    capacity => "62.70%",
+    device => "/dev/mapper/vg0-lv_root",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "7.99 GiB",
+    size_bytes => 8579448832,
+    used => "5.01 GiB",
+    used_bytes => 5379600384
+  },
+  /bigdata => {
+    available => "685.54 TiB",
+    available_bytes => 753756190801920,
+    capacity => "44.86%",
+    device => "/dev/bigdata",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "1.21 PiB",
+    size_bytes => 1366895638872064,
+    used => "557.65 TiB",
+    used_bytes => 613139448070144
+  },
+  /boot => {
+    available => "62.02 MiB",
+    available_bytes => 65028096,
+    capacity => "67.99%",
+    device => "/dev/sda1",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "193.73 MiB",
+    size_bytes => 203141120,
+    used => "131.71 MiB",
+    used_bytes => 138113024
+  },
+  /dev/shm => {
+    available => "251.76 GiB",
+    available_bytes => 270324633600,
+    capacity => "0.02%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "52.91 MiB",
+    used_bytes => 55476224
+  },
+  /home => {
+    available => "3.96 GiB",
+    available_bytes => 4250714112,
+    capacity => "0.79%",
+    device => "/dev/mapper/vg0-lv_home",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /rhome => {
+    available => "167.56 TiB",
+    available_bytes => 184232315977728,
+    capacity => "3.97%",
+    device => "/dev/home",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "174.48 TiB",
+    size_bytes => 191844910628864,
+    used => "6.92 TiB",
+    used_bytes => 7612594651136
+  },
+  /run => {
+    available => "251.53 GiB",
+    available_bytes => 270076956672,
+    capacity => "0.11%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "289.11 MiB",
+    used_bytes => 303153152
+  },
+  /scratch => {
+    available => "999.34 GiB",
+    available_bytes => 1073032847360,
+    capacity => "0.00%",
+    device => "/dev/mapper/vg0-lv_scratch",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "999.37 GiB",
+    size_bytes => 1073066614784,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /sys/fs/cgroup => {
+    available => "251.81 GiB",
+    available_bytes => 270380109824,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "noexec",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /tmp => {
+    available => "97.55 GiB",
+    available_bytes => 104739258368,
+    capacity => "0.06%",
+    device => "/dev/mapper/vg0-lv_tmp",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "97.61 GiB",
+    size_bytes => 104806400000,
+    used => "64.03 MiB",
+    used_bytes => 67141632
+  },
+  /var => {
+    available => "3.57 GiB",
+    available_bytes => 3836100608,
+    capacity => "10.47%",
+    device => "/dev/mapper/vg0-lv_var",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "427.61 MiB",
+    used_bytes => 448380928
+  }
+}
+networking => {
+  dhcp => "192.168.18.3",
+  domain => "ib.int.bioinfo.ucr.edu",
+  fqdn => "i25.ib.int.bioinfo.ucr.edu",
+  hostname => "i25",
+  interfaces => {
+    enp6s0f0 => {
+      bindings => [
+        {
+          address => "192.168.18.225",
+          netmask => "255.255.255.0",
+          network => "192.168.18.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:1ff:fe19:bd6a",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      dhcp => "192.168.18.3",
+      ip => "192.168.18.225",
+      ip6 => "fe80::a6bf:1ff:fe19:bd6a",
+      mac => "a4:bf:01:19:bd:6a",
+      mtu => 1500,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.18.0",
+      network6 => "fe80::"
+    },
+    enp6s0f1 => {
+      mac => "a4:bf:01:19:bd:6b",
+      mtu => 1500
+    },
+    ib0 => {
+      bindings => [
+        {
+          address => "192.168.19.225",
+          netmask => "255.255.255.0",
+          network => "192.168.19.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:103:19:bd6a",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      ip => "192.168.19.225",
+      ip6 => "fe80::a6bf:103:19:bd6a",
+      mtu => 65520,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.19.0",
+      network6 => "fe80::"
+    },
+    lo => {
+      bindings => [
+        {
+          address => "127.0.0.1",
+          netmask => "255.0.0.0",
+          network => "127.0.0.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "::1",
+          netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          network => "::1"
+        }
+      ],
+      ip => "127.0.0.1",
+      ip6 => "::1",
+      mtu => 65536,
+      netmask => "255.0.0.0",
+      netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+      network => "127.0.0.0",
+      network6 => "::1"
+    }
+  },
+  ip => "192.168.18.225",
+  ip6 => "fe80::a6bf:1ff:fe19:bd6a",
+  mac => "a4:bf:01:19:bd:6a",
+  mtu => 1500,
+  netmask => "255.255.255.0",
+  netmask6 => "ffff:ffff:ffff:ffff::",
+  network => "192.168.18.0",
+  network6 => "fe80::",
+  primary => "enp6s0f0"
+}
+os => {
+  architecture => "x86_64",
+  family => "RedHat",
+  hardware => "x86_64",
+  name => "CentOS",
+  release => {
+    full => "7.1.1503",
+    major => "7",
+    minor => "1"
+  },
+  selinux => {
+    enabled => false
+  }
+}
+partitions => {
+  /dev/mapper/vg0-lv_home => {
+    mount => "/home",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/mapper/vg0-lv_root => {
+    mount => "/",
+    size => "8.00 GiB",
+    size_bytes => 8589934592
+  },
+  /dev/mapper/vg0-lv_scratch => {
+    mount => "/scratch",
+    size => "999.86 GiB",
+    size_bytes => 1073590829056
+  },
+  /dev/mapper/vg0-lv_tmp => {
+    mount => "/tmp",
+    size => "97.66 GiB",
+    size_bytes => 104857600000
+  },
+  /dev/mapper/vg0-lv_var => {
+    mount => "/var",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda1 => {
+    mount => "/boot",
+    size => "200.00 MiB",
+    size_bytes => 209715200
+  },
+  /dev/sda2 => {
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda3 => {
+    size => "1.09 TiB",
+    size_bytes => 1195737350144
+  }
+}
+path => /rhome/forsythc/bin:/rhome/forsythc/bin:/opt/linux/centos/7.x/x86_64/pkgs/vim/7.4.1952/bin:/opt/linux/centos/7.x/x86_64/pkgs/iigb_utilities/1/bin:/opt/linux/centos/7.x/x86_64/pkgs/perl/5.20.2/bin:/opt/linux/centos/7.x/x86_64/pkgs/python/2.7.5/bin:/opt/linux/centos/7.x/x86_64/pkgs/ggobi/2.1.11/bin:/opt/linux/centos/7.x/x86_64/pkgs/R/3.4.0/bin:/opt/linux/centos/7.x/x86_64/pkgs/openmpi/2.0.1-slurm-16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/sbin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/bin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/opt/puppetlabs/bin
+processors => {
+  count => 64,
+  isa => "x86_64",
+  models => [
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz"
+  ],
+  physicalcount => 2,
+  speed => "3.00 GHz"
+}
+ruby => {
+  platform => "x86_64-linux",
+  sitedir => "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0",
+  version => "2.1.9"
+}
+ssh => {
+  dsa => {
+    fingerprints => {
+      sha1 => "SSHFP 2 1 19ce0d36b1dca8bc6a3f206c9549c3ce4b3c2cab",
+      sha256 => "SSHFP 2 2 6ce791e94e695e7a026fc5e07b238506768833a7697bb1fd19ccd5faff54b39f"
+    },
+    key => "AAAAB3NzaC1kc3MAAACBALVgMJT2+MVVkTVoqD23vRklI0wVoQeYLxbMyqPzbhWV8bUWuBwS6oqnwvikzF14nNaMBcc1pxllm+iF/PLiKUJx3UxJA62Qz4xgflctZCi/hs6mSk61k1VOhtS0HB5HZgBUXO/aZMJK5wuFo7GgJk8YAw+nis9NVCXRDqllCmDFAAAAFQDOi4aC8rUISIHoXRVkwpw4rQecFwAAAIAcE4kHltX+YvjgqqBFuaI+py25RtIZt06fIPT6JkfpZLTnV/v0Ep8xRz+pkidZAh34Dd1xD4MqMqRz58Bs5yGDSI1x7Sc9deR0OjRjKP97N8+u/a4mq9vQ9vw0EMw3RK6fd26GmCQOzor+1X0/agRo4avuTzHw9UpHpXDrxQiaNgAAAIBpH1P2mmqJWG2zrsGW/axbP98lDm89kLqXLshBz+gF5W4g6F2zvNqBVDXLyKBCyJkmMx+W5PydmVS2lccFg1PWJK5LUoW90oJDmk9ZO4QOEwj1TT1B4gKp4nSDHDon7U5vlRxPWEklKbf4mwc1zrzUrJAQK7jfJq0nTEuhY35olw=="
+  },
+  ed25519 => {
+    fingerprints => {
+      sha1 => "SSHFP 4 1 705e2ddfad666fe062cb88a419a95f5cccda4369",
+      sha256 => "SSHFP 4 2 40594fec4d00e2b5804a01c67afe975f93052d881b23e8148ded93a25738d220"
+    },
+    key => "AAAAC3NzaC1lZDI1NTE5AAAAIHebmDbYNtFT6Qw319M890BzD91YOo23MO7xvNfukrih"
+  },
+  rsa => {
+    fingerprints => {
+      sha1 => "SSHFP 1 1 ec08093f8636472910a41f23bbaf86297f5dbc62",
+      sha256 => "SSHFP 1 2 71989d26ee089cc86a4f429c5a7c415d0edea49806f43b860169469bb6abafd7"
+    },
+    key => "AAAAB3NzaC1yc2EAAAABIwAAAQEAvDzLM2tTnay/8ApAWtKEBEEx2vUxOKj/aJ8A5dOv3omFC/Pj+RIXa0Nr99gg5o8duELE2hl2NGXqohsHEB8P9CWBRuOYrs2/LOwi2PEtNtX+nGnTaVm93kFDWBVQ6m8NnJKF4LDxzzye/YAWEPGqSvUl6OKYKs7bde97EPwpGO2femkJpLbpoubiO0YlTTbUP+dVHIeP02fa7MamdCgLZAMN7oTuI5K70VvuPutiQV2Ga9anMDLse+By2oDdyh7/OdC5CHFBgXFTvgCicIYkZeAF1bT5+qEvVXBECQW1+oxkCRPzR2QASwG5xIbdI6G5fEfKJfKnju2H0iIscsbK/Q=="
+  }
+}
+system_uptime => {
+  days => 62,
+  hours => 1493,
+  seconds => 5375305,
+  uptime => "62 days"
+}
+timezone => PDT
+virtual => physical
+architecture => x86_64
+blockdevice_sda_model => INTEL SSDSC2BB01
+blockdevice_sda_size => 1200243695616
+blockdevice_sda_vendor => ATA
+blockdevices => sda
+domain => ib.int.bioinfo.ucr.edu
+facterversion => 2.4.6
+filesystems => xfs
+fqdn => i24.ib.int.bioinfo.ucr.edu
+gid => bioinfo
+hardwareisa => x86_64
+hardwaremodel => x86_64
+hostname => i24
+id => forsythc
+interfaces => enp6s0f0,enp6s0f1,ib0,lo
+ipaddress => 192.168.18.224
+ipaddress_enp6s0f0 => 192.168.18.224
+ipaddress_ib0 => 192.168.19.224
+ipaddress_lo => 127.0.0.1
+is_virtual => false
+kernel => Linux
+kernelmajversion => 3.10
+kernelrelease => 3.10.0-229.1.2.el7.x86_64
+kernelversion => 3.10.0
+macaddress => a4:bf:01:16:26:0f
+macaddress_enp6s0f0 => a4:bf:01:16:26:0f
+macaddress_enp6s0f1 => a4:bf:01:16:26:10
+memoryfree => 489.38 GB
+memoryfree_mb => 501128.11
+memorysize => 503.62 GB
+memorysize_mb => 515709.18
+mtu_enp6s0f0 => 1500
+mtu_enp6s0f1 => 1500
+mtu_ib0 => 65520
+mtu_lo => 65536
+netmask => 255.255.255.0
+netmask_enp6s0f0 => 255.255.255.0
+netmask_ib0 => 255.255.255.0
+netmask_lo => 255.0.0.0
+network_enp6s0f0 => 192.168.18.0
+network_ib0 => 192.168.19.0
+network_lo => 127.0.0.0
+operatingsystem => CentOS
+operatingsystemmajrelease => 7
+operatingsystemrelease => 7.1.1503
+os => {"name"=>"CentOS", "family"=>"RedHat", "release"=>{"major"=>"7", "minor"=>"1", "full"=>"7.1.1503"}}
+osfamily => RedHat
+partitions => {"sda1"=>{"uuid"=>"51d90a88-dd60-4454-b5d4-531d7c917657", "size"=>"409600", "mount"=>"/boot", "filesystem"=>"xfs"}, "sda2"=>{"uuid"=>"4e98e932-6677-4411-86c3-cc0b1712ae1c", "size"=>"8388608", "filesystem"=>"swap"}, "sda3"=>{"size"=>"2335424512", "filesystem"=>"LVM2_member"}}
+path => /rhome/forsythc/bin:/rhome/forsythc/bin:/opt/linux/centos/7.x/x86_64/pkgs/vim/7.4.1952/bin:/opt/linux/centos/7.x/x86_64/pkgs/iigb_utilities/1/bin:/opt/linux/centos/7.x/x86_64/pkgs/perl/5.20.2/bin:/opt/linux/centos/7.x/x86_64/pkgs/python/2.7.5/bin:/opt/linux/centos/7.x/x86_64/pkgs/ggobi/2.1.11/bin:/opt/linux/centos/7.x/x86_64/pkgs/R/3.4.0/bin:/opt/linux/centos/7.x/x86_64/pkgs/openmpi/2.0.1-slurm-16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/sbin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/bin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/opt/puppetlabs/bin
+physicalprocessorcount => 2
+processor0 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor1 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor10 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor11 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor12 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor13 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor14 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor15 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor16 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor17 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor18 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor19 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor2 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor20 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor21 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor22 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor23 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor24 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor25 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor26 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor27 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor28 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor29 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor3 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor30 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor31 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor32 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor33 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor34 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor35 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor36 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor37 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor38 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor39 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor4 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor40 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor41 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor42 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor43 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor44 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor45 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor46 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor47 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor48 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor49 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor5 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor50 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor51 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor52 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor53 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor54 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor55 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor56 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor57 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor58 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor59 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor6 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor60 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor61 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor62 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor63 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor7 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor8 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processor9 => Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+processorcount => 64
+processors => {"models"=>["Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz", "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz"], "count"=>64, "physicalcount"=>2}
+ps => ps -ef
+puppetversion => 3.1.1
+rubyplatform => x86_64-linux
+rubysitedir => /usr/local/share/ruby/site_ruby/
+rubyversion => 2.0.0
+selinux => false
+sshdsakey => AAAAB3NzaC1kc3MAAACBALVgMJT2+MVVkTVoqD23vRklI0wVoQeYLxbMyqPzbhWV8bUWuBwS6oqnwvikzF14nNaMBcc1pxllm+iF/PLiKUJx3UxJA62Qz4xgflctZCi/hs6mSk61k1VOhtS0HB5HZgBUXO/aZMJK5wuFo7GgJk8YAw+nis9NVCXRDqllCmDFAAAAFQDOi4aC8rUISIHoXRVkwpw4rQecFwAAAIAcE4kHltX+YvjgqqBFuaI+py25RtIZt06fIPT6JkfpZLTnV/v0Ep8xRz+pkidZAh34Dd1xD4MqMqRz58Bs5yGDSI1x7Sc9deR0OjRjKP97N8+u/a4mq9vQ9vw0EMw3RK6fd26GmCQOzor+1X0/agRo4avuTzHw9UpHpXDrxQiaNgAAAIBpH1P2mmqJWG2zrsGW/axbP98lDm89kLqXLshBz+gF5W4g6F2zvNqBVDXLyKBCyJkmMx+W5PydmVS2lccFg1PWJK5LUoW90oJDmk9ZO4QOEwj1TT1B4gKp4nSDHDon7U5vlRxPWEklKbf4mwc1zrzUrJAQK7jfJq0nTEuhY35olw==
+sshed25519key => AAAAC3NzaC1lZDI1NTE5AAAAIAPdhOkd0MImbZPGS8hn4SE/fDK7KMJL8TjklPEnZUt/
+sshfp_dsa => SSHFP 2 1 19ce0d36b1dca8bc6a3f206c9549c3ce4b3c2cab
+SSHFP 2 2 6ce791e94e695e7a026fc5e07b238506768833a7697bb1fd19ccd5faff54b39f
+sshfp_ed25519 => SSHFP 4 1 b1db30c1a92764bd30ab6cd82a5ae1ad38fbb2d9
+SSHFP 4 2 cfa63d2d8522f89288f386e333bd3384fba4c1e2856f8b75737a717f0ffa5ef1
+sshfp_rsa => SSHFP 1 1 ec08093f8636472910a41f23bbaf86297f5dbc62
+SSHFP 1 2 71989d26ee089cc86a4f429c5a7c415d0edea49806f43b860169469bb6abafd7
+sshrsakey => AAAAB3NzaC1yc2EAAAABIwAAAQEAvDzLM2tTnay/8ApAWtKEBEEx2vUxOKj/aJ8A5dOv3omFC/Pj+RIXa0Nr99gg5o8duELE2hl2NGXqohsHEB8P9CWBRuOYrs2/LOwi2PEtNtX+nGnTaVm93kFDWBVQ6m8NnJKF4LDxzzye/YAWEPGqSvUl6OKYKs7bde97EPwpGO2femkJpLbpoubiO0YlTTbUP+dVHIeP02fa7MamdCgLZAMN7oTuI5K70VvuPutiQV2Ga9anMDLse+By2oDdyh7/OdC5CHFBgXFTvgCicIYkZeAF1bT5+qEvVXBECQW1+oxkCRPzR2QASwG5xIbdI6G5fEfKJfKnju2H0iIscsbK/Q==
+swapfree => 4.00 GB
+swapfree_mb => 4096.00
+swapsize => 4.00 GB
+swapsize_mb => 4096.00
+system_uptime => {"seconds"=>120776, "hours"=>33, "days"=>1, "uptime"=>"1 day"}
+timezone => PDT
+uniqueid => a8c0e013
+uptime => 1 day
+uptime_days => 1
+uptime_hours => 33
+uptime_seconds => 120776
+virtual => physical
+aio_agent_version => 1.10.1
+augeas => {
+  version => "1.4.0"
+}
+disks => {
+  sda => {
+    model => "INTEL SSDSC2BB01",
+    size => "1.09 TiB",
+    size_bytes => 1200243695616,
+    vendor => "ATA"
+  }
+}
+dmi => {
+  bios => {
+    release_date => "03/31/2016",
+    vendor => "Intel Corporation",
+    version => "SE5C610.86B.01.01.0016.033120161139"
+  },
+  board => {
+    asset_tag => "Base Board Asset Tag",
+    manufacturer => "Intel Corporation",
+    product => "S2600TPFR"
+  },
+  chassis => {
+    asset_tag => "....................",
+    type => "Rack Mount Chassis"
+  },
+  manufacturer => "Intel Corporation",
+  product => {
+    name => "S2600TPFR"
+  }
+}
+facterversion => 3.6.4
+filesystems => xfs
+identity => {
+  gid => 1054,
+  group => "bioinfo",
+  privileged => false,
+  uid => 3365,
+  user => "forsythc"
+}
+is_virtual => false
+kernel => Linux
+kernelmajversion => 3.10
+kernelrelease => 3.10.0-229.1.2.el7.x86_64
+kernelversion => 3.10.0
+load_averages => {
+  15m => 275.13,
+  1m => 275.26,
+  5m => 275.26
+}
+memory => {
+  swap => {
+    available => "3.65 GiB",
+    available_bytes => 3923943424,
+    capacity => "8.64%",
+    total => "4.00 GiB",
+    total_bytes => 4294963200,
+    used => "353.83 MiB",
+    used_bytes => 371019776
+  },
+  system => {
+    available => "482.02 GiB",
+    available_bytes => 517566382080,
+    capacity => "4.29%",
+    total => "503.62 GiB",
+    total_bytes => 540760219648,
+    used => "21.60 GiB",
+    used_bytes => 23193837568
+  }
+}
+mountpoints => {
+  / => {
+    available => "2.98 GiB",
+    available_bytes => 3199823872,
+    capacity => "62.70%",
+    device => "/dev/mapper/vg0-lv_root",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "7.99 GiB",
+    size_bytes => 8579448832,
+    used => "5.01 GiB",
+    used_bytes => 5379624960
+  },
+  /bigdata => {
+    available => "685.54 TiB",
+    available_bytes => 753756157247488,
+    capacity => "44.86%",
+    device => "/dev/bigdata",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "1.21 PiB",
+    size_bytes => 1366895638872064,
+    used => "557.65 TiB",
+    used_bytes => 613139481624576
+  },
+  /boot => {
+    available => "62.02 MiB",
+    available_bytes => 65028096,
+    capacity => "67.99%",
+    device => "/dev/sda1",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "193.73 MiB",
+    size_bytes => 203141120,
+    used => "131.71 MiB",
+    used_bytes => 138113024
+  },
+  /dev/shm => {
+    available => "251.75 GiB",
+    available_bytes => 270309945344,
+    capacity => "0.03%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "66.91 MiB",
+    used_bytes => 70164480
+  },
+  /home => {
+    available => "3.96 GiB",
+    available_bytes => 4250714112,
+    capacity => "0.79%",
+    device => "/dev/mapper/vg0-lv_home",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /rhome => {
+    available => "167.56 TiB",
+    available_bytes => 184232315977728,
+    capacity => "3.97%",
+    device => "/dev/home",
+    filesystem => "gpfs",
+    options => [
+      "rw",
+      "relatime"
+    ],
+    size => "174.48 TiB",
+    size_bytes => 191844910628864,
+    used => "6.92 TiB",
+    used_bytes => 7612594651136
+  },
+  /run => {
+    available => "251.54 GiB",
+    available_bytes => 270093742080,
+    capacity => "0.11%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "273.10 MiB",
+    used_bytes => 286367744
+  },
+  /scratch => {
+    available => "999.34 GiB",
+    available_bytes => 1073032847360,
+    capacity => "0.00%",
+    device => "/dev/mapper/vg0-lv_scratch",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "999.37 GiB",
+    size_bytes => 1073066614784,
+    used => "32.20 MiB",
+    used_bytes => 33767424
+  },
+  /sys/fs/cgroup => {
+    available => "251.81 GiB",
+    available_bytes => 270380109824,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "noexec",
+      "mode=755"
+    ],
+    size => "251.81 GiB",
+    size_bytes => 270380109824,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /tmp => {
+    available => "97.54 GiB",
+    available_bytes => 104728440832,
+    capacity => "0.07%",
+    device => "/dev/mapper/vg0-lv_tmp",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "97.61 GiB",
+    size_bytes => 104806400000,
+    used => "74.35 MiB",
+    used_bytes => 77959168
+  },
+  /var => {
+    available => "3.55 GiB",
+    available_bytes => 3815178240,
+    capacity => "10.95%",
+    device => "/dev/mapper/vg0-lv_var",
+    filesystem => "xfs",
+    options => [
+      "rw",
+      "relatime",
+      "attr2",
+      "inode64",
+      "noquota"
+    ],
+    size => "3.99 GiB",
+    size_bytes => 4284481536,
+    used => "447.56 MiB",
+    used_bytes => 469303296
+  }
+}
+networking => {
+  dhcp => "192.168.18.3",
+  domain => "ib.int.bioinfo.ucr.edu",
+  fqdn => "i23.ib.int.bioinfo.ucr.edu",
+  hostname => "i23",
+  interfaces => {
+    enp6s0f0 => {
+      bindings => [
+        {
+          address => "192.168.18.223",
+          netmask => "255.255.255.0",
+          network => "192.168.18.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:1ff:fe16:e532",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      dhcp => "192.168.18.3",
+      ip => "192.168.18.223",
+      ip6 => "fe80::a6bf:1ff:fe16:e532",
+      mac => "a4:bf:01:16:e5:32",
+      mtu => 1500,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.18.0",
+      network6 => "fe80::"
+    },
+    enp6s0f1 => {
+      mac => "a4:bf:01:16:e5:33",
+      mtu => 1500
+    },
+    ib0 => {
+      bindings => [
+        {
+          address => "192.168.19.223",
+          netmask => "255.255.255.0",
+          network => "192.168.19.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::a6bf:103:16:e532",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::"
+        }
+      ],
+      ip => "192.168.19.223",
+      ip6 => "fe80::a6bf:103:16:e532",
+      mtu => 65520,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.19.0",
+      network6 => "fe80::"
+    },
+    lo => {
+      bindings => [
+        {
+          address => "127.0.0.1",
+          netmask => "255.0.0.0",
+          network => "127.0.0.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "::1",
+          netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          network => "::1"
+        }
+      ],
+      ip => "127.0.0.1",
+      ip6 => "::1",
+      mtu => 65536,
+      netmask => "255.0.0.0",
+      netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+      network => "127.0.0.0",
+      network6 => "::1"
+    }
+  },
+  ip => "192.168.18.223",
+  ip6 => "fe80::a6bf:1ff:fe16:e532",
+  mac => "a4:bf:01:16:e5:32",
+  mtu => 1500,
+  netmask => "255.255.255.0",
+  netmask6 => "ffff:ffff:ffff:ffff::",
+  network => "192.168.18.0",
+  network6 => "fe80::",
+  primary => "enp6s0f0"
+}
+os => {
+  architecture => "x86_64",
+  family => "RedHat",
+  hardware => "x86_64",
+  name => "CentOS",
+  release => {
+    full => "7.1.1503",
+    major => "7",
+    minor => "1"
+  },
+  selinux => {
+    enabled => false
+  }
+}
+partitions => {
+  /dev/mapper/vg0-lv_home => {
+    mount => "/home",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/mapper/vg0-lv_root => {
+    mount => "/",
+    size => "8.00 GiB",
+    size_bytes => 8589934592
+  },
+  /dev/mapper/vg0-lv_scratch => {
+    mount => "/scratch",
+    size => "999.86 GiB",
+    size_bytes => 1073590829056
+  },
+  /dev/mapper/vg0-lv_tmp => {
+    mount => "/tmp",
+    size => "97.66 GiB",
+    size_bytes => 104857600000
+  },
+  /dev/mapper/vg0-lv_var => {
+    mount => "/var",
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda1 => {
+    mount => "/boot",
+    size => "200.00 MiB",
+    size_bytes => 209715200
+  },
+  /dev/sda2 => {
+    size => "4.00 GiB",
+    size_bytes => 4294967296
+  },
+  /dev/sda3 => {
+    size => "1.09 TiB",
+    size_bytes => 1195737350144
+  }
+}
+path => /rhome/forsythc/bin:/rhome/forsythc/bin:/opt/linux/centos/7.x/x86_64/pkgs/vim/7.4.1952/bin:/opt/linux/centos/7.x/x86_64/pkgs/iigb_utilities/1/bin:/opt/linux/centos/7.x/x86_64/pkgs/perl/5.20.2/bin:/opt/linux/centos/7.x/x86_64/pkgs/python/2.7.5/bin:/opt/linux/centos/7.x/x86_64/pkgs/ggobi/2.1.11/bin:/opt/linux/centos/7.x/x86_64/pkgs/R/3.4.0/bin:/opt/linux/centos/7.x/x86_64/pkgs/openmpi/2.0.1-slurm-16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/bin:/opt/linux/centos/7.x/x86_64/pkgs/slurm/16.05.4/sbin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/bin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/opt/puppetlabs/bin
+processors => {
+  count => 64,
+  isa => "x86_64",
+  models => [
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz",
+    "Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz"
+  ],
+  physicalcount => 2,
+  speed => "3.00 GHz"
+}
+ruby => {
+  platform => "x86_64-linux",
+  sitedir => "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0",
+  version => "2.1.9"
+}
+ssh => {
+  dsa => {
+    fingerprints => {
+      sha1 => "SSHFP 2 1 19ce0d36b1dca8bc6a3f206c9549c3ce4b3c2cab",
+      sha256 => "SSHFP 2 2 6ce791e94e695e7a026fc5e07b238506768833a7697bb1fd19ccd5faff54b39f"
+    },
+    key => "AAAAB3NzaC1kc3MAAACBALVgMJT2+MVVkTVoqD23vRklI0wVoQeYLxbMyqPzbhWV8bUWuBwS6oqnwvikzF14nNaMBcc1pxllm+iF/PLiKUJx3UxJA62Qz4xgflctZCi/hs6mSk61k1VOhtS0HB5HZgBUXO/aZMJK5wuFo7GgJk8YAw+nis9NVCXRDqllCmDFAAAAFQDOi4aC8rUISIHoXRVkwpw4rQecFwAAAIAcE4kHltX+YvjgqqBFuaI+py25RtIZt06fIPT6JkfpZLTnV/v0Ep8xRz+pkidZAh34Dd1xD4MqMqRz58Bs5yGDSI1x7Sc9deR0OjRjKP97N8+u/a4mq9vQ9vw0EMw3RK6fd26GmCQOzor+1X0/agRo4avuTzHw9UpHpXDrxQiaNgAAAIBpH1P2mmqJWG2zrsGW/axbP98lDm89kLqXLshBz+gF5W4g6F2zvNqBVDXLyKBCyJkmMx+W5PydmVS2lccFg1PWJK5LUoW90oJDmk9ZO4QOEwj1TT1B4gKp4nSDHDon7U5vlRxPWEklKbf4mwc1zrzUrJAQK7jfJq0nTEuhY35olw=="
+  },
+  ed25519 => {
+    fingerprints => {
+      sha1 => "SSHFP 4 1 5f0a4be50b3cbb0be1b605b2dac4f4b58562408e",
+      sha256 => "SSHFP 4 2 61cca8dfddbfc4402fcdccca1fc966386d3272bf569d355be198918544a9136a"
+    },
+    key => "AAAAC3NzaC1lZDI1NTE5AAAAIB0seGXLD7lJIFpquaTmgDaLGKcLdEj4CKCWrFPrTTly"
+  },
+  rsa => {
+    fingerprints => {
+      sha1 => "SSHFP 1 1 ec08093f8636472910a41f23bbaf86297f5dbc62",
+      sha256 => "SSHFP 1 2 71989d26ee089cc86a4f429c5a7c415d0edea49806f43b860169469bb6abafd7"
+    },
+    key => "AAAAB3NzaC1yc2EAAAABIwAAAQEAvDzLM2tTnay/8ApAWtKEBEEx2vUxOKj/aJ8A5dOv3omFC/Pj+RIXa0Nr99gg5o8duELE2hl2NGXqohsHEB8P9CWBRuOYrs2/LOwi2PEtNtX+nGnTaVm93kFDWBVQ6m8NnJKF4LDxzzye/YAWEPGqSvUl6OKYKs7bde97EPwpGO2femkJpLbpoubiO0YlTTbUP+dVHIeP02fa7MamdCgLZAMN7oTuI5K70VvuPutiQV2Ga9anMDLse+By2oDdyh7/OdC5CHFBgXFTvgCicIYkZeAF1bT5+qEvVXBECQW1+oxkCRPzR2QASwG5xIbdI6G5fEfKJfKnju2H0iIscsbK/Q=="
+  }
+}
+system_uptime => {
+  days => 62,
+  hours => 1493,
+  seconds => 5375307,
+  uptime => "62 days"
+}
+timezone => PDT
+virtual => physical
+--------

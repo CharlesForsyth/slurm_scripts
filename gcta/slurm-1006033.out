@@ -1,0 +1,74 @@
+Mon Jul 17 16:15:15 PDT 2017
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version 1.26.0
+* (C) 2010-2016, The University of Queensland
+* MIT License
+* Please report bugs to: Jian Yang <jian.yang@uq.edu.au>
+*******************************************************************
+Analysis started: Mon Jul 17 16:15:15 2017
+
+Options:
+--thread-num 8
+--reml
+--grm test
+--pheno test.phen
+--out test
+
+Note: the program will be running on 8 threads.
+
+Reading IDs of the GRM from [test.grm.id].
+3925 IDs read from [test.grm.id].
+Reading the GRM from [test.grm.bin].
+GRM for 3925 individuals are included from [test.grm.bin].
+Reading phenotypes from [test.phen].
+Non-missing phenotypes of 3925 individuals are included from [test.phen].
+
+3925 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+3925 observations, 1 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.462455 0.889944
+logL: -2529.14
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-2074.82	0.02389	0.91928	
+2	-1945.84	0.02343	0.93419	
+3	-1944.49	0.02309	0.94480	
+4	-1943.84	0.02283	0.95228	
+5	-1943.53	0.02223	0.96878	
+6	-1943.25	0.02216	0.96911	
+7	-1943.24	0.02215	0.96912	
+8	-1943.24	0.02215	0.96912	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.99065
+logL: -1947.71500
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-1947.71	0.99065	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.022152	0.008751
+V(e)	0.969117	0.022896
+Vp	0.991269	0.022467
+V(G)/Vp	0.022347	0.008769
+
+Sampling variance/covariance of the estimates of variance components:
+7.65778e-05	-4.80094e-05	
+-4.80094e-05	0.000524219	
+
+Summary result of REML analysis has been saved in the file [test.hsq].
+
+Analysis finished: Mon Jul 17 16:15:28 2017
+Computational time: 0:0:13
+
+real	0m12.806s
+user	1m20.372s
+sys	0m1.043s
