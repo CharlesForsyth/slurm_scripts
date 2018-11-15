@@ -1,6 +1,4 @@
 #!/bin/bash -l
-
-
 sbatch <<EOT
 #!/bin/bash
 #SBATCH --nodes=1
