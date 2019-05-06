@@ -1,10 +1,10 @@
 #!/bin/bash -l
 
-#SBATCH --nodes=4
+#SBATCH --nodes=5
 #SBATCH --ntasks=200
 #SBATCH --output=mutinode.out
 #SBATCH --job-name="test"
-#SBATCH -p batch
+#SBATCH -p batch,short,intel
 
 #SBATCH --time=00:01:00
 
